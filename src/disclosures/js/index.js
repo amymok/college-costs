@@ -9,6 +9,9 @@ require( './utils/nemo-shim' );
 
 var app = {
   init: function() {
+  	// TODO: Draw in settlement vs non, depending on how we decide to do that.
+  	// Until then, show only the settlement view.
+  	settlementView.init();
     financialModel.init();
     financialView.init();
     // Placeholder to set bar graphs
